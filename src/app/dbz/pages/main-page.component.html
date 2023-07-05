@@ -1,0 +1,16 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <!--On delete-->
+    <app-dbz-list [characterList]="Character"
+    (onDelete)="onDeleteCharacter($event)"></app-dbz-list>
+
+  </div>
+
+  <div class="col">
+    <app-dbz-add-character (onNewCharacter)="onNewCharacter($event)"></app-dbz-add-character> <!-- se le agrega el evento para agregar por TS nuevo pj -->
+  </div>
+</div>
